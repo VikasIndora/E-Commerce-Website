@@ -1,0 +1,24 @@
+{
+    "name": "e-commerce-website",
+    "version": "1.0.0",
+    "description": "Project for Acmegrade internship/training",
+    "main": "backend/server.js",
+    "type": "commonjs",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/VikasIndora/E-Commerce-Website.git"
+    },
+    "scripts": {
+        "start": "node backend/server.js",
+        "dev": "nodemon backend/server.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.19.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.0"
+    },
+    "author": "Vikas Indora",
+    "license": "MIT"
+}
