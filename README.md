@@ -30,17 +30,25 @@
 - JSON Files — Lightweight server-side persistence for products and orders.
 
 ## How to run
-1. Install dependencies
+1. Download the source code
+- Either clone the repository using Git:
+```bash
+git clone https://github.com/VikasIndora/E-Commerce-Website.git
+```
+- Or download the ZIP file from the GitHub page (https://github.com/VikasIndora/E-Commerce-Website) and extract it on your machine.
+
+2. Install dependencies
+Open a terminal inside the project folder and run:
 ```bash
 npm install
 ```
 
-2. Start the server
+3. Start the server
 ```bash
 npm start
 ```
 
-3. Open in browser
+4. Open in browser
 - Navigate to: http://localhost:5000
 - Use the landing page to access Admin or Client modules.
 
@@ -54,4 +62,4 @@ Password: admin123
 - Persistence:
     - Products & orders are stored in backend JSON files (backend/data/).
     - Client accounts and cart are stored in browser localStorage for demo simplicity.
-- This is a learning/demo project and not production-ready. For a real system, replace JSON/LocalStorage with a secure database and proper authentication.
+- This is a learning project meant to showcase my knowledge on the topic. For future implementation to make it more production-ready, replace JSON/LocalStorage with a secure database and proper authentication.
