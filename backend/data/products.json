@@ -1,11 +1,29 @@
 [
-  {
-    "id": 1723776000000,
-    "name": "Sample T-Shirt",
-    "price": 499,
-    "imageUrl": "https://images.unsplash.com/photo-1722310752951-4d459d28c678?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "description": "Soft cotton t-shirt",
-    "category": "Apparel",
-    "createdAt": "2025-08-01T00:00:00.000Z"
-  }
+    {
+        "id": 1723776000000,
+        "name": "T-Shirt",
+        "price": 499,
+        "imageUrl": "https://images.unsplash.com/photo-1722310752951-4d459d28c678?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Soft cotton t-shirt",
+        "category": "Apparel",
+        "createdAt": "2025-08-01T00:00:00.000Z"
+    },
+        {
+        "id": 1823886000000,
+        "name": "Pant",
+        "price": 599,
+        "imageUrl": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?q=80&w=697&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Casual trim jeans",
+        "category": "Apparel",
+        "createdAt": "2025-08-02T00:00:00.000Z"
+    },
+    {
+        "id": 1923996000000,
+        "name": "Shoes",
+        "price": 799,
+        "imageUrl": "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Hi-top sneaker shoes",
+        "category": "Apparel",
+        "createdAt": "2025-08-02T00:00:00.000Z"
+    }
 ]

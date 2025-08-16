@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": 1755314416746,
+    "items": [
+      {
+        "id": 1723776000000,
+        "name": "T-Shirt",
+        "price": 499,
+        "qty": 1
+      }
+    ],
+    "total": 499,
+    "user": {
+      "name": "Vikas",
+      "email": "indora1904@gmail.com"
+    },
+    "status": "PLACED",
+    "createdAt": "2025-08-16T03:20:16.746Z"
+  }
+]
