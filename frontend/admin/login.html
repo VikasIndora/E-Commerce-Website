@@ -4,17 +4,34 @@
   <meta charset="UTF-8" />
   <title>Admin Login</title>
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .card{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <header><h1>Admin Login</h1></header>
+    <header><h1>Admin • Login</h1></header>
     <div class="card">
       <form onsubmit="adminLogin(event)">
         <label>Username</label>
         <input id="username" class="input" placeholder="admin" />
         <label>Password</label>
         <input id="password" type="password" class="input" placeholder="admin123" />
-        <div style="margin-top:12px">
+        <div style="margin-top:12px" class="buttons">
           <button class="btn btn-primary" type="submit">Login</button>
           <a class="link" href="products.html">Dashboard</a>
         </div>
