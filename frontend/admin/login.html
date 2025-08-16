@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header><h1>Admin Login</h1></header>
+    <div class="card">
+      <form onsubmit="adminLogin(event)">
+        <label>Username</label>
+        <input id="username" class="input" placeholder="admin" />
+        <label>Password</label>
+        <input id="password" type="password" class="input" placeholder="admin123" />
+        <div style="margin-top:12px">
+          <button class="btn btn-primary" type="submit">Login</button>
+          <a class="link" href="products.html">Dashboard</a>
+        </div>
+      </form>
+      <p class="small" style="margin-top:8px;">Demo creds: admin / admin123</p>
+    </div>
+    <footer>© Vikas Indora</footer>
+  </div>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Products</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body onload="render()">
+  <div class="container">
+    <header>
+      <h1>Admin • Products</h1>
+      <nav class="nav">
+        <a class="link" href="products.html">Products</a>
+        <a class="link" href="orders.html">Orders</a>
+        <a class="link" href="login.html" onclick="localStorage.removeItem('adminToken')">Logout</a>
+      </nav>
+    </header>
+
+    <div class="card" style="margin-bottom:16px;">
+      <h2>Add Product</h2>
+      <form onsubmit="addProduct(event)">
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;">
+          <div>
+            <label>Name</label>
+            <input id="pname" class="input" placeholder="Product name" required />
+          </div>
+          <div>
+            <label>Price (₹)</label>
+            <input id="pprice" type="number" class="input" placeholder="499" required />
+          </div>
+          <div>
+            <label>Image URL</label>
+            <input id="pimage" class="input" placeholder="https://..." />
+          </div>
+          <div>
+            <label>Category</label>
+            <input id="pcat" class="input" placeholder="General" />
+          </div>
+          <div style="grid-column:1/-1;">
+            <label>Description</label>
+            <input id="pdesc" class="input" placeholder="Short description" />
+          </div>
+        </div>
+        <div style="margin-top:12px;">
+          <button class="btn btn-primary" type="submit">Add</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>All Products</h2>
+      <table class="table">
+        <thead><tr><th>ID</th><th>Name</th><th>Price</th><th>Category</th><th>Added</th><th>Action</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <footer>© Vikas Indora</footer>
+  </div>
+  <script src="../js/admin.js"></script>
+  <script>
+    async function render(){
+      const list = await fetchProducts();
+      const tbody = document.getElementById("tbody");
+      tbody.innerHTML = "";
+      list.forEach(p => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${p.id}</td>
+          <td>${p.name}</td>
+          <td>₹${p.price}</td>
+          <td>${p.category}</td>
+          <td>${new Date(p.createdAt).toLocaleString()}</td>
+          <td><button class="btn btn-danger" onclick="deleteProduct(${p.id})">Delete</button></td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+  </script>
+</body>
+</html>
