@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Cart</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body onload="renderCart()">
+  <div class="container">
+    <header>
+      <h1>Your Cart</h1>
+      <nav class="nav">
+        <a class="link" href="products.html">Products</a>
+        <a class="link" href="login.html">Login</a>
+        <a class="link" href="register.html">Register</a>
+      </nav>
+    </header>
+    <div class="card">
+      <table class="table">
+        <thead>
+          <tr><th>Product</th><th>Price</th><th>Qty</th><th>Subtotal</th><th>Action</th></tr>
+        </thead>
+        <tbody id="cartBody"></tbody>
+      </table>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;">
+        <div class="total">Total: <span id="cartTotal">₹0</span></div>
+        <div style="display:flex;gap:8px;">
+          <button class="btn btn-danger" onclick="deleteCart()">Clear Cart</button>
+          <button class="btn btn-primary" onclick="placeOrder()">Place Order</button>
+        </div>
+      </div>
+    </div>
+    <footer>© Vikas Indora</footer>
+  </div>
+  <script src="../js/client.js"></script>
+</body>
+</html>
